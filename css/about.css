@@ -1,0 +1,12 @@
+.about-bg {
+  background-image: url("../img/annie-spratt-hX_hf2lPpUU-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f6f6f9;
+}
+
+@media only screen and (max-width: 1000px) {
+  .about-bg {
+    background: none;
+  }
+}

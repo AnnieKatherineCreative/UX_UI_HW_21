@@ -1,0 +1,16 @@
+.rose {
+  background-image: url("../img/pawel-czerwinski-3rDPHZ7_gCA-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f6f6f9;
+}
+
+@media only screen and (max-width: 1000px) {
+  .rose {
+    background: none;
+  }
+}
+
+.skills-flex {
+  font-size: 18px;
+}
