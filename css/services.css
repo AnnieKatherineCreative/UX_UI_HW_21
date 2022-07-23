@@ -1,0 +1,27 @@
+.services-bg {
+  background-image: url("../img/pawel-czerwinski-Giag3Trwfwo-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #e4e8ec;
+}
+
+.projects-grid {
+  grid-template-columns: 300px 1fr;
+  margin-left: 2rem;
+  grid-row-gap: 7rem;
+  align-items: center;
+  grid-column-gap: 5rem;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 650px) {
+  .projects-grid {
+    margin-left: 0;
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+  }
+
+  .project-title {
+    margin-bottom: 5rem;
+  }
+}
