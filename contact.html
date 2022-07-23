@@ -23,9 +23,14 @@
         <small class="d-none d-lg-inline">UX/UI&nbsp;Research&nbsp;and&nbsp;Design</small>
       </div>
       <nav class="top-nav">
-        <a href="./about.html">About</a>
+        <a id="about-dropdown" onclick="openDropdown();" class="pointer">About</a>
         <a href="./recent-projects.html">Portfolio</a>
         <a href="./contact.html">Contact</a>
+        <div id="dropdown" class="dropdown-content">
+          <a href="./about.html">About Me</a>
+          <a href="./skills.html">My Skills</a>
+          <a href="./resume.html">My Resume</a>
+        </div>
       </nav>
     </header>
 
@@ -48,8 +53,6 @@
         <button type="button" class="btn btn-submit px-4 rounded-4">Send</button>
       </div>
     </div>
-
-
 
     <footer class="footer">
       <div class="col d-flex">
@@ -93,6 +96,19 @@
   $('.scroll-to-top').on("click", () => {
     $('html, body').animate({scrollTop: 0}, 'slow');
   });
+
+  function openDropdown() {
+    document.getElementById("dropdown").classList.toggle("show");
+  }
+
+  window.onclick = event => {
+    if (!event.target.matches('#about-dropdown')) {
+      const dropdown = document.getElementById("dropdown");
+      if (dropdown.classList.contains('show')) {
+        dropdown.classList.remove('show');
+      }
+    }
+  }
 </script>
 </body>
 
