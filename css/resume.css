@@ -1,0 +1,12 @@
+.resume-bg {
+  background-image: url("../img/pawel-czerwinski-IBVI7yEx_lI-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f6f6f9;
+}
+
+@media only screen and (max-width: 1000px) {
+  .resume-bg {
+    background: none;
+  }
+}
