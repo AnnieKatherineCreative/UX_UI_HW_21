@@ -120,7 +120,7 @@ nav > a {
 
 @media (min-width: 768px) {
   .footer-nav {
-    height: 10rem;
+    height: 6rem;
     width: auto;
   }
 }
