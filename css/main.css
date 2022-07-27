@@ -123,6 +123,10 @@ nav > a {
     height: 6rem;
     width: auto;
   }
+
+  .mt-md-7 {
+    margin-top: 10rem;
+  }
 }
 
 @media (max-width: 1250px) {
