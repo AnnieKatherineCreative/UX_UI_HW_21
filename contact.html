@@ -44,19 +44,23 @@
 
     <div class="row my-3 py-3 ms-md-3 ps-md-2">
       <div class="col-sm-4">
-        <div class="mb-3">
-          <label for="exampleFormControlInput0" class="form-label">Name</label>
-          <input type="email" class="form-control" id="exampleFormControlInput0" placeholder="Alex Smith">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
-        </div>
-        <button type="button" class="btn btn-submit px-4 rounded-4">Send</button>
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="subject" value="Contact Me Form">
+          <div class="mb-3">
+            <label for="exampleFormControlInput0" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput0" placeholder="Alex Smith">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
+                   placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Your message</label>
+            <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="7"></textarea>
+          </div>
+          <button type="submit" class="btn btn-submit px-4 rounded-4">Send</button>
+        </form>
       </div>
     </div>
 
